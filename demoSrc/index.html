@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Crayolarise</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href=""> -->
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+        .controls {
+            position: fixed;
+
+            bottom: 0;
+            left: 0;
+
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+        }
+
+        img,
+        video {
+            max-width: 200px;
+        }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <video muted playsInline autoplay></video>
+        <img/>
+        <canvas id="canvas"></canvas>
+
+        <div class="controls">
+            <button id="webcam">Webcam</button>
+            <button id="image">Next Image</button>
+            <input type="range" min="1" max="50" id="size" step="1" value="10"/>
+            <label>
+                Print
+                <input type="checkbox" id="print"/>
+            </label>
+        </div>
+        
+        <script src="./js/script.js" async defer></script>
+    </body>
+</html>

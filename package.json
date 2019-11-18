@@ -1,0 +1,26 @@
+{
+  "name": "crayolarise",
+  "version": "1.0.0",
+  "description": "A package to convert canvas to crayola pack colour",
+  "main": "index.js",
+  "scripts": {
+    "demo": "parcel ./demoSrc/index.html -d demo"
+  },
+  "author": {
+    "name": "Jonny Thaw",
+    "email": "hi@jthaw.me",
+    "url": "https://jthaw.me"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "crayola-colors": "^1.0.1",
+    "hex-rgb": "^4.1.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jthawme/Crayolarise"
+  }
+}
