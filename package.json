@@ -4,7 +4,8 @@
   "description": "A package to convert canvas to crayola pack colour",
   "main": "index.js",
   "scripts": {
-    "demo": "parcel ./demoSrc/index.html -d demo"
+    "demo": "parcel ./demoSrc/index.html -d demo",
+    "build": "parcel build ./demoSrc/index.html -d demo",
   },
   "author": {
     "name": "Jonny Thaw",
